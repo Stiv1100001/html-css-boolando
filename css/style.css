@@ -1,0 +1,37 @@
+/* * RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ! Switch image on hover */
+
+img {
+    display: block;
+}
+
+img+img {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover img+img {
+    display: inline-block;
+}
+
+/* ! */
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.row {
+    text-align: center;
+}
+
+.
