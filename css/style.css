@@ -5,10 +5,15 @@
     padding: 0;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* ! Switch image on hover */
 
 img {
     display: block;
+    height: 600px;
 }
 
 img+img {
@@ -27,11 +32,51 @@ img+img {
 
 .container {
     width: 95%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .row {
     text-align: center;
 }
 
-.
+.card {
+    display: inline-block;
+    position: relative;
+    margin-left: 2px;
+}
+
+.tag {
+    display: inline-block;
+    font-weight: bold;
+    height: 22px;
+    color: white;
+    bottom: 40px;
+    position: absolute;
+    z-index: 2;
+    padding: 2px;
+}
+
+.discount {
+    background-color: red;
+    width: 40px;
+    left: 0;
+}
+
+.heart {
+    color: black;
+    display: none;
+    position: absolute;
+    font-size: 2rem;
+    z-index: 5;
+    top: 10px;
+    right: 5px;
+}
+
+.heart:active {
+    color: red;
+}
+
+.sustenibility {
+    background-color: green;
+    left: 45px;
+}
