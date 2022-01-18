@@ -1,0 +1,144 @@
+/* * RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ! Switch image on hover */
+
+img {
+    height: 600px;
+}
+
+img+img {
+    display: none;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover img+img {
+    display: inline-block;
+}
+
+/* ! */
+
+.container {
+    width: 95%;
+    margin: 50px auto;
+}
+
+.row {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    margin-left: 2px;
+}
+
+.card:hover .heart {
+    display: inline-block;
+}
+
+.card:active .heart {
+    color: red;
+}
+
+.card:hover {
+    background-color: brown;
+}
+
+.card:hover .info {
+    color: bisque;
+}
+
+.card:hover .brand {
+    color: black;
+}
+
+.card:hover .current-price {
+    color: blue;
+}
+
+/* Tag product */
+
+.tag {
+    display: inline-block;
+    font-weight: bold;
+    height: 22px;
+    color: white;
+    bottom: 60px;
+    position: absolute;
+    z-index: 2;
+    padding: 2px;
+}
+
+.discount {
+    background-color: red;
+    width: 40px;
+    left: 0;
+}
+
+.sustenibility {
+    background-color: green;
+    left: 45px;
+}
+
+.no-spacing {
+    left: 0;
+}
+
+/* Heart like */
+
+.heart {
+    display: none;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    font-size: 2rem;
+    z-index: 5;
+    top: 10px;
+    right: 0;
+}
+
+.heart:active,
+.heart:visited {
+    color: red;
+}
+
+/* Info section */
+
+.info {
+    text-align: left;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.brand {
+    color: gray;
+    font-size: 12px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.current-price {
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
