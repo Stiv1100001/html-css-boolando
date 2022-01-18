@@ -36,6 +36,7 @@ img+img {
 }
 
 .row {
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -50,7 +51,7 @@ img+img {
     font-weight: bold;
     height: 22px;
     color: white;
-    bottom: 40px;
+    bottom: 60px;
     position: absolute;
     z-index: 2;
     padding: 2px;
@@ -60,6 +61,11 @@ img+img {
     background-color: red;
     width: 40px;
     left: 0;
+}
+
+.sustenibility {
+    background-color: green;
+    left: 45px;
 }
 
 .heart {
@@ -76,7 +82,27 @@ img+img {
     color: red;
 }
 
-.sustenibility {
-    background-color: green;
-    left: 45px;
+
+
+.info {
+    text-align: left;
+    font-weight: bold;
+}
+
+.brand {
+    color: gray;
+    font-size: 12px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.current-price {
+    color: red;
+}
+
+.old-price {
+    text-decoration: line-through;
 }
