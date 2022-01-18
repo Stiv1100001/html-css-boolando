@@ -12,7 +12,6 @@ body {
 /* ! Switch image on hover */
 
 img {
-    display: block;
     height: 600px;
 }
 
@@ -46,6 +45,8 @@ img+img {
     margin-left: 2px;
 }
 
+/* Tag product */
+
 .tag {
     display: inline-block;
     font-weight: bold;
@@ -68,21 +69,31 @@ img+img {
     left: 45px;
 }
 
+.no-spacing {
+    left: 0;
+}
+
+/* Heart like */
+
 .heart {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: white;
     color: black;
-    display: none;
     position: absolute;
     font-size: 2rem;
     z-index: 5;
     top: 10px;
-    right: 5px;
+    right: 0;
 }
 
-.heart:active {
+.heart:active,
+.heart:visited {
     color: red;
 }
 
-
+/* Info section */
 
 .info {
     text-align: left;
